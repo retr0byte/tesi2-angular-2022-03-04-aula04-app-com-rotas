@@ -1,4 +1,11 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>App com rotas</h1>
+
+<nav>
+  <ul>
+    <li><a [routerLink]="['/']">HOME</a></li>
+    <li><a [routerLink]="['/about']">SOBRE</a></li>
+    <li><a [routerLink]="['/multiTable']">TABUADA</a></li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

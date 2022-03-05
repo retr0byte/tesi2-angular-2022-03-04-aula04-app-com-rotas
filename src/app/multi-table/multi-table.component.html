@@ -1,0 +1,7 @@
+<h2>Relembre a tabuada mais conhecida:</h2>
+
+<button (click)="generateMultiTable()">Gerar tabuada do 5</button>
+
+<div *ngFor="let mProduct of this.multiTable">
+  <p>{{ mProduct }}</p>
+</div>
