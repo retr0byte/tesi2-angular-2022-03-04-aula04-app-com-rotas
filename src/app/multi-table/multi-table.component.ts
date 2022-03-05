@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MultiTableComponent implements OnInit {
   private mFactor: number = 5;
-  public multiTable: number[];
+  public multiTable: string[];
 
   constructor() {}
 
@@ -15,6 +15,8 @@ export class MultiTableComponent implements OnInit {
 
   generateMultiTable(): void {
     let mFactors: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    this.multiTable = mFactors.map((factor) => factor * this.mFactor);
+    this.multiTable = mFactors.map(
+      (factor) => `${this.mFactor} x ${factor} = ${factor * this.mFactor}`
+    );
   }
 }
